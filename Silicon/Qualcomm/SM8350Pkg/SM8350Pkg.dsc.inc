@@ -11,10 +11,10 @@
 
 # SoC Defines
 [Defines]
-  USE_PHYSICAL_TIMER             = 0
+  USE_PHYSICAL_TIMER = 0
 
 [BuildOptions.common]
-  *_*_*_CC_FLAGS = -march=armv8.2-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv8.2-a+crypto+rcpc
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
@@ -41,14 +41,15 @@
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|3
 
-  # UART
-  gQcomPkgTokenSpaceGuid.PcdUartSerialBase|0x98C000
+  gQcomPkgTokenSpaceGuid.PcdHasLevel3Cache|TRUE
 
 [LibraryClasses.common]
   PlatformPeiLib|SM8350Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
   PlatformPrePiLib|SM8350Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   RFSProtectionLib|SM8350Pkg/Library/RFSProtectionLib/RFSProtectionLib.inf
   AcpiPlatformUpdateLib|SM8350Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
+  HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
+  ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
 [Components.common]
   SM8350Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf

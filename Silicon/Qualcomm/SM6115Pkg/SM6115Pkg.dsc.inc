@@ -11,17 +11,17 @@
 
 # SoC Defines
 [Defines]
-  USE_PHYSICAL_TIMER             = 1
+  USE_PHYSICAL_TIMER = 1
 
 [BuildOptions.common]
-  *_*_*_CC_FLAGS = -march=armv8-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv8-a+crypto+rcpc
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
-  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|1
-  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|2
-  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|3
-  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|0
+  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|18
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|20
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|30
+  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|26
   gArmTokenSpaceGuid.PcdGicDistributorBase|0xf200000
   gArmTokenSpaceGuid.PcdGicRedistributorsBase|0xf300000
   gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0xf200000
@@ -35,13 +35,14 @@
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
-  # UART
-  gQcomPkgTokenSpaceGuid.PcdUartSerialBase|0x4A90000
+  gQcomPkgTokenSpaceGuid.PcdHasLevel3Cache|FALSE
 
 [LibraryClasses.common]
   PlatformPeiLib|SM6115Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
   PlatformPrePiLib|SM6115Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   AcpiPlatformUpdateLib|SM6115Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
+  HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
+  ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
 [Components.common]
   SM6115Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf

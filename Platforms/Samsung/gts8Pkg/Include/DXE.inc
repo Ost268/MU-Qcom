@@ -1,6 +1,7 @@
   INF Binaries/gts8/QcomPkg/Drivers/SamsungDxe/SecShareInfoDxe/SecShareInfoDxe.inf
 
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
+  INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   INF Binaries/gts8/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
 
@@ -56,24 +57,21 @@
   INF Binaries/gts8/QcomPkg/Drivers/ULogDxe/ULogDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
+
+  INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
+
   INF Binaries/gts8/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/ICBDxe/ICBDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
 
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
-  INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-  INF MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableDxe/FirmwarePerformanceDxe.inf
-
-  INF Binaries/gts8/QcomPkg/Application/QcomChargerApp/QcomChargerApp.inf
-
-  INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
   INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
   INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
   INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
+  INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
 
-  INF Binaries/gts8/MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
 !if $(USE_DISPLAYDXE) == 1
   INF Binaries/gts8/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
 !endif
@@ -87,9 +85,6 @@
 !else
   INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 !endif
-
-  INF MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe.inf
-  INF MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
 
   INF Binaries/gts8/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
@@ -108,8 +103,8 @@
   INF Binaries/gts8/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/UsbInitDxe/UsbInitDxe.inf
-  INF Binaries/sweet/QcomPkg/Drivers/CipherDxe/CipherDxe.inf         # Use sweet CipherDxe as gts8 UCDxe needs DTBExt Protocol we don't have
-  INF Binaries/sweet/QcomPkg/Drivers/RNGDxe/RngDxe.inf               # Use sweet RngDxe as gts8 RngDxe needs DTBExt Protocol we don't have
+  INF Binaries/sweet_k6a/QcomPkg/Drivers/CipherDxe/CipherDxe.inf         # Use sweet_k6a CipherDxe as gts8 UCDxe needs DTBExt Protocol we don't have
+  INF Binaries/sweet_k6a/QcomPkg/Drivers/RNGDxe/RngDxe.inf               # Use sweet_k6a RngDxe as gts8 RngDxe needs DTBExt Protocol we don't have
   #INF Binaries/gts8/QcomPkg/Drivers/PILDxe/PILDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/PILProxyDxe/PILProxyDxe.inf
   INF Binaries/gts8/QcomPkg/Drivers/SPSSDxe/SPSSDxe.inf

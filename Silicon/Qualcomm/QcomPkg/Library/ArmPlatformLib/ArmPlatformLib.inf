@@ -25,7 +25,7 @@
   DebugLib
   IoLib
   MemoryMapHelperLib
-  PlatformMemoryMapLib
+  DeviceMemoryMapLib
   PlatformPrePiLib
 
 [Sources.common]
@@ -43,7 +43,6 @@
   gArmTokenSpaceGuid.PcdArmPrimaryCoreMask
   gArmTokenSpaceGuid.PcdArmPrimaryCore
   gArmTokenSpaceGuid.PcdFdSize
-  gArmTokenSpaceGuid.PcdGicRedistributorsBase
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp

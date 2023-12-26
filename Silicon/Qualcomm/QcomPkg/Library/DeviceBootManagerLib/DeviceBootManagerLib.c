@@ -1,9 +1,8 @@
 /** @file
- *DeviceBootManager  - Ms Device specific extensions to BdsDxe.
+  DeviceBootManager  - Ms Device specific extensions to BdsDxe.
 
-Copyright (C) Microsoft Corporation. All rights reserved.
-SPDX-License-Identifier: BSD-2-Clause-Patent
-
+  Copyright (C) Microsoft Corporation. All rights reserved.
+  SPDX-License-Identifier: BSD-2-Clause-Patent
 **/
 
 #include <Uefi.h>
@@ -15,7 +14,6 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Guid/MsBootMenuGuid.h>
 #include <Guid/DfciPacketHeader.h>
 
-#include <Protocol/GraphicsOutput.h>
 #include <Protocol/OnScreenKeyboard.h>
 #include <Protocol/TpmPpProtocol.h>
 
@@ -28,9 +26,11 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Library/MemoryAllocationLib.h>
 #include <Library/MsBootManagerSettingsLib.h>
 #include <Library/MsBootOptionsLib.h>
+#include <Library/MsBootOptions.h>
 #include <Library/MsBootPolicyLib.h>
-#include <Library/BootGraphicsProviderLib.h>
+#include <Library/MsBootPolicy.h>
 #include <Library/BootGraphicsLib.h>
+#include <Library/BootGraphics.h>
 #include <Library/GraphicsConsoleHelperLib.h>
 #include <Library/MsPlatformDevicesLib.h>
 #include <Library/MsPlatformPowerCheckLib.h>
@@ -50,8 +50,8 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Settings/BootMenuSettings.h>
 #include <Settings/DfciSettings.h>
 
-static EFI_EVENT  mPreReadyToBootEvent;
-static EFI_EVENT  mPostReadyToBootEvent;
+STATIC EFI_EVENT mPreReadyToBootEvent;
+STATIC EFI_EVENT mPostReadyToBootEvent;
 
 CHAR8  mMemoryType[][30] = {
   // Value for PcdMemoryMapTypes
@@ -72,7 +72,7 @@ CHAR8  mMemoryType[][30] = {
   "EfiMaxMemoryType           "
 };
 
-static
+STATIC
 VOID
 ThermalFailureShutdown (
   VOID
@@ -109,7 +109,7 @@ ThermalFailureShutdown (
   gRT->ResetSystem (EfiResetShutdown, EFI_SUCCESS, 0, NULL);
 }
 
-static
+STATIC
 VOID
 PowerFailureShutdown (
   VOID
@@ -148,7 +148,7 @@ PowerFailureShutdown (
   gRT->ResetSystem (EfiResetShutdown, EFI_SUCCESS, 0, NULL);
 }
 
-static
+STATIC
 EFI_STATUS
 MsPreBootChecks (
   VOID
@@ -267,7 +267,7 @@ CleanUp:
 /**
   Lock the required boot variables if LockBootOrder is enabled
 */
-static
+STATIC
 VOID
 BdsBootLockBootVariables (
   VOID
@@ -280,7 +280,7 @@ BdsBootLockBootVariables (
   UINTN                           BootOrderSize;
   CHAR16                          OptionName[sizeof ("Boot####")];
   UINTN                           i;
-  static BOOLEAN                  AlreadyLocked = FALSE;
+  STATIC BOOLEAN                  AlreadyLocked = FALSE;
 
   if (AlreadyLocked) {
     // This can happen as we may call ready to boot a number of times;
@@ -386,7 +386,7 @@ BdsBootLockBootVariables (
  *
  * @return VOID
  */
-static
+STATIC
 VOID
 EnableOSK (
   VOID
@@ -466,7 +466,7 @@ EnableOSK (
  *
  * @return VOID
  */
-static
+STATIC
 VOID
 PrintMemoryMap (
   )
@@ -521,7 +521,7 @@ PrintMemoryMap (
   @retval  TRUE         BootCurrent is internal shell.
   @retval  FALSE        BootCurrent is not internal shell.
 **/
-static
+STATIC
 BOOLEAN
 BootCurrentIsInternalShell (
   VOID
@@ -607,7 +607,7 @@ Pre ready to boot callback to lock bds variables.
 @param  Context               The pointer to the notification function's context,
 which is implementation-dependent.
 **/
-static
+STATIC
 VOID
 EFIAPI
 PreReadyToBoot (
@@ -630,7 +630,7 @@ For booting the internal shell, set the video resolution to low.
 @param  Context               The pointer to the notification function's context,
 which is implementation-dependent.
 **/
-static
+STATIC
 VOID
 EFIAPI
 PostReadyToBoot (
@@ -640,7 +640,7 @@ PostReadyToBoot (
 {
   BOOLEAN         StartNetworkStack = FALSE;
   EFI_STATUS      Status;
-  static BOOLEAN  FirstPass = TRUE;
+  STATIC BOOLEAN  FirstPass = TRUE;
 
   if (BootCurrentIsInternalShell ()) {
     EfiBootManagerConnectAll ();
@@ -815,7 +815,7 @@ DeviceBootManagerAfterConsole (
   return GetPlatformConnectList ();
 }
 
-static
+STATIC
 VOID
 RebootToFrontPage (
   VOID
@@ -836,7 +836,7 @@ RebootToFrontPage (
     DEBUG ((DEBUG_ERROR, "Unable to set OsIndications\n"));
   }
 
-  DEBUG ((DEBUG_WARN, "%a Resetting system.\n", __FUNCTION__));
+  DEBUG ((DEBUG_INFO, "%a Resetting system.\n", __FUNCTION__));
   gRT->ResetSystem (EfiResetWarm, EFI_SUCCESS, 0, NULL);
 
   CpuDeadLoop ();
@@ -911,27 +911,27 @@ DeviceBootManagerPriorityBoot (
   )
 {
   BOOLEAN     FrontPageBoot;
-  BOOLEAN     AltDeviceBoot;
+  BOOLEAN     SlotSwitch;
   EFI_STATUS  Status;
 
   FrontPageBoot = MsBootPolicyLibIsSettingsBoot ();
-  AltDeviceBoot = MsBootPolicyLibIsAltBoot ();
+  SlotSwitch    = MsBootPolicyLibSlotSwitch ();
   MsBootPolicyLibClearBootRequests ();
 
   // There are four cases:
-  //   1. Nothing pressed.             return EFI_NOT_FOUND
-  //   2. FrontPageBoot                load FrontPage
-  //   3. AltDeviceBoot                load alternate boot order
-  //   4. Both indicators are present  Load NetworkUnlock
+  //   1.  Nothing pressed.             return EFI_NOT_FOUND
+  //   2.  FrontPageBoot                load FrontPage
+  //   3.  SlotSwitch                   Load Slot Switch App
+  //   4   Both indicators are present  Load NetworkUnlock
 
-  if (AltDeviceBoot) {
+  if (SlotSwitch) {
     // Alternate boot or Network Unlock option
     if (FrontPageBoot) {
       DEBUG ((DEBUG_INFO, "[Bds] both detected. NetworkUnlock\n"));
       Status = MsBootOptionsLibGetDefaultBootApp (BootOption, "NS");
     } else {
-      DEBUG ((DEBUG_INFO, "[Bds] alternate boot\n"));
-      Status = MsBootOptionsLibGetDefaultBootApp (BootOption, "MA");
+      DEBUG ((DEBUG_INFO, "[Bds] Slot Switch\n"));
+      Status = MsBootOptionsLibSlotSwitchApp (BootOption, "VOL-");
     }
   } else if (FrontPageBoot) {
     // Front Page Boot Option
@@ -957,9 +957,6 @@ DeviceBootManagerUnableToBoot (
 {
   EFI_STATUS                    Status;
   EFI_GRAPHICS_OUTPUT_PROTOCOL *GraphicsOutput;
-  UINT32                        DisplayHeight;
-  INTN                          DestX;
-  INTN                          DestY;
 
   // Locate Gop Protocol
   Status = gBS->HandleProtocol (gST->ConsoleOutHandle, &gEfiGraphicsOutputProtocolGuid, (VOID **)&GraphicsOutput);
@@ -975,16 +972,17 @@ DeviceBootManagerUnableToBoot (
     DEBUG ((EFI_D_ERROR, "%a Unable to set console mode - %r\n", __FUNCTION__, Status));
   }
 
-  // Set Display Location of No Boot OS Image
-  DisplayHeight = GraphicsOutput->Mode->Info->HorizontalResolution;
-  DestX         = (DisplayHeight - 334) / 2;
-  DestY         = 20;
-
   // Display No Boot OS Logo
-  Status = DisplayPostBootGraphic (BG_NO_BOOT_OS, DestX, DestY);
+  Status = DisplayBootGraphic (BG_NO_BOOT_OS);
   if (EFI_ERROR (Status) != FALSE) {
     DEBUG ((EFI_D_ERROR, "%a Unable to set graphics - %r\n", __FUNCTION__, Status));
   }
+
+  // Wait 10s
+  gBS->Stall(10000000);
+
+  // Shutdown
+  gRT->ResetSystem (EfiResetShutdown, EFI_SUCCESS, 0, NULL);
 
   // Do Cpu Dead Loop
   CpuDeadLoop ();

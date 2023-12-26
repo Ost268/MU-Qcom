@@ -10,9 +10,14 @@
   PlatformUtils.c
 
 [Packages]
+  ArmPkg/ArmPkg.dec
   MdePkg/MdePkg.dec
   QcomPkg/QcomPkg.dec
 
 [LibraryClasses]
   BaseLib
+  PcdLib
   IoLib
+
+[FixedPcd]
+  gArmTokenSpaceGuid.PcdGicRedistributorsBase

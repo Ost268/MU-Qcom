@@ -11,10 +11,10 @@
 
 # SoC Defines
 [Defines]
-  USE_PHYSICAL_TIMER             = 0
+  USE_PHYSICAL_TIMER = 0
 
 [BuildOptions.common]
-  *_*_*_CC_FLAGS = -march=armv9-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv9-a+crypto+rcpc
 
 [PcdsFixedAtBuild.common]
   gArmTokenSpaceGuid.PcdArmArchTimerFreqInHz|19200000
@@ -32,20 +32,21 @@
   gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM8450"
 !elseif $(SOC_TYPE) == 1
   gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 8+ Gen 1 @ 3.20 GHz"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM8450-AB"
+  gQcomPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM8475"
 !endif
 
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|3
 
-  # UART
-  gQcomPkgTokenSpaceGuid.PcdUartSerialBase|0x99C000
+  gQcomPkgTokenSpaceGuid.PcdHasLevel3Cache|TRUE
 
 [LibraryClasses.common]
   PlatformPeiLib|SM8450Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
   PlatformPrePiLib|SM8450Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   RFSProtectionLib|SM8450Pkg/Library/RFSProtectionLib/RFSProtectionLib.inf
   AcpiPlatformUpdateLib|SM8450Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
+  HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
+  ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
 [Components.common]
   SM8450Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf

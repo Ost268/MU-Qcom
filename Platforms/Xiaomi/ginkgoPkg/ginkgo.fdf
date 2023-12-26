@@ -85,10 +85,6 @@ READ_LOCK_STATUS   = TRUE
   !include Include/DXE.inc
   !include Include/RAW.inc
 
-  # Secure Boot Key Enroll
-  INF SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe.inf
-  #INF QcomPkg/Drivers/SecureBootProvisioningDxe/SecureBootProvisioningDxe.inf
-
   INF EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
   # BDS
@@ -96,40 +92,29 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
   INF MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
 
-  # HID Support
-  INF HidPkg/HidKeyboardDxe/HidKeyboardDxe.inf
-  INF HidPkg/HidMouseAbsolutePointerDxe/HidMouseAbsolutePointerDxe.inf
-
   # ACPI and SMBIOS
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   INF SM6125Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
+	
+  # USB Power	
+  INF SM6125Pkg/Drivers/UsbPwrEnablerDxe/UsbPwrEnablerDxe.inf
 
   # ACPI Tables
   !include Include/ACPI.inc
 
-  # DT
-  INF EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
-  !include Include/FDT.inc
-
   INF MdeModulePkg/Universal/EsrtFmpDxe/EsrtFmpDxe.inf
-
-  !include QcomPkg/Frontpage.fdf.inc
 
   INF DfciPkg/IdentityAndAuthManager/IdentityAndAuthManagerDxe.inf
 
+  !include QcomPkg/Frontpage.fdf.inc
+
   FILE FREEFORM = PCD(gOemPkgTokenSpaceGuid.PcdLogoFile) {
-    SECTION RAW = ginkgoPkg/Include/Resources/BootLogo.png
+    SECTION RAW = QcomPkg/Include/Resources/BootLogo_Medium.bmp
     SECTION UI = "Logo"
   }
 
-  # TODO: Make this Image for every single Device
-  FILE FREEFORM = PCD(gMsCorePkgTokenSpaceGuid.PcdRegulatoryGraphicFileGuid) {
-    SECTION RAW = QcomPkg/Include/Resources/RegulatoryLogos.png
-  }
-
   INF QcomPkg/Drivers/GpioButtons/GpioButtons.inf
-  INF QcomPkg/Drivers/KernelErrataPatcher/KernelErrataPatcher.inf
 
 [FV.FVMAIN_COMPACT]
 FvAlignment        = 8
@@ -162,4 +147,4 @@ READ_LOCK_STATUS   = TRUE
     }
   }
 
-  !include QcomPkg/CommonFdf.fdf.inc
+  !include QcomPkg/Common.fdf.inc

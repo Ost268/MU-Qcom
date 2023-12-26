@@ -27,20 +27,15 @@
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   OemPkg/OemPkg.dec
-  QcomPkg/QcomPkg.dec
   MsGraphicsPkg/MsGraphicsPkg.dec
+  QcomPkg/QcomPkg.dec
 
 [LibraryClasses]
   BmpSupportLib
   DebugLib
   DxeServicesLib
-  LodePngLib
   PcdLib
   UefiBootServicesTableLib
-
-
-[Protocols]
-
 
 [Pcd]
   gOemPkgTokenSpaceGuid.PcdLogoFile

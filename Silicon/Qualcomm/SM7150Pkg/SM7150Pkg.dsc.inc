@@ -11,13 +11,13 @@
 
 # SoC Defines
 [Defines]
-  USE_PHYSICAL_TIMER             = 1
+  USE_PHYSICAL_TIMER = 1
 
 [BuildOptions.common]
 !if $(SOC_TYPE) == 1
-  *_*_*_CC_FLAGS = -march=armv8-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv8-a+crypto+rcpc
 !else
-  *_*_*_CC_FLAGS = -march=armv8.2-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv8.2-a+crypto+rcpc
 !endif
 
 [PcdsFixedAtBuild.common]
@@ -45,14 +45,15 @@
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
-  # UART
-  gQcomPkgTokenSpaceGuid.PcdUartSerialBase|0xA88000
+  gQcomPkgTokenSpaceGuid.PcdHasLevel3Cache|FALSE
 
 [LibraryClasses.common]
   PlatformPeiLib|SM7150Pkg/Library/PlatformPeiLib/PlatformPeiLib.inf
   PlatformPrePiLib|SM7150Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
   RFSProtectionLib|SM7150Pkg/Library/RFSProtectionLib/RFSProtectionLib.inf
   AcpiPlatformUpdateLib|SM7150Pkg/Library/AcpiPlatformUpdateLib/AcpiPlatformUpdateLib.inf
+  HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
+  ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
 [Components.common]
   SM7150Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf

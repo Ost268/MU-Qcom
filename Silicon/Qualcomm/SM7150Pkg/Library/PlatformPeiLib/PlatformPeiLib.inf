@@ -23,8 +23,8 @@
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
-  SM7150Pkg/SM7150Pkg.dec
   QcomPkg/QcomPkg.dec
+  SM7150Pkg/SM7150Pkg.dec
 
 [LibraryClasses]
   ArmLib
@@ -36,6 +36,7 @@
   MemoryAllocationLib
   SerialPortLib
   MemoryMapHelperLib
+  DeviceConfigurationMapLib
 
 [FixedPcd]
   gArmTokenSpaceGuid.PcdFvSize
