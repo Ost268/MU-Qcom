@@ -95,4 +95,4 @@
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
   INF Binaries/winner/QcomPkg/Drivers/PILDxe/PILDxe.inf
-  INF Binaries/hotdog/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
+  INF Binaries/winner/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
