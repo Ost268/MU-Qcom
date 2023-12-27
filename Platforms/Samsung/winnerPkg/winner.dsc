@@ -60,8 +60,8 @@
   gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Fold
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3120
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1536
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2152
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32
 
 [PcdsDynamicDefault.common]
