@@ -42,16 +42,8 @@
 
 [PcdsFixedAtBuild.common]
   # Device Specific
-  gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000            # Starting Address
-!if $(RAM_SIZE) == 6
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x150000000           # 6 GB Size
-!elseif $(RAM_SIZE) == 8
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000           # 8 GB Size
-!elseif $(RAM_SIZE) == 12
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0x300000000           # 12 GB Size
-!else
-!error "Invaild RAM Size! Use 6, 8 or 12."
-!endif
+  gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000           # Starting Address
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x300000000          # 12 GB Size
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVendor|L"Ost268"  # Device Maintainer
 
