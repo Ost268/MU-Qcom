@@ -1,5 +1,5 @@
 # @file
-# Script to Build OnePlus 7T Pro UEFI firmware
+# Script to Build Samsung Galaxy Fold UEFI firmware
 #
 # Copyright (c) Microsoft Corporation.
 # SPDX-License-Identifier: BSD-2-Clause-Patent
@@ -34,7 +34,7 @@ class CommonPlatform():
     Scopes = ('winner', 'gcc_aarch64_linux', 'edk2-build')
     WorkspaceRoot = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
     PackagesPath = (
-        "Platforms/OnePlus",
+        "Platforms/Samsung",
         "Common/Mu",
         "Common/Mu_OEM_Sample",
         "Common/Mu_Tiano_Plus",
