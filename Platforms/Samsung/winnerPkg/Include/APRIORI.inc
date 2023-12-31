@@ -87,8 +87,6 @@ APRIORI DXE {
 
   INF Binaries/winner/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLA.inf
-  INF Binaries/winner/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
 
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
@@ -102,7 +100,7 @@ APRIORI DXE {
   INF Binaries/winner/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/HashDxe/HashDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/CipherDxe/CipherDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/RNGDxe/RngDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/RngDxe/RngDxe.inf
 
   INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
   INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
