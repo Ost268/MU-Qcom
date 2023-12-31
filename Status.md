@@ -16,7 +16,7 @@
 **WARNING: Only Debug Build work right now!** <br />
 **NOTE: A Protocol called DTBExt is missing wich leads to the Unstable State.**
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Galaxy-Tab-S8-5G.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Samsung-Galaxy-Tab-S8-5G.png" width="500" alt="Preview">
 
 **Codename: gts8** <br />
 **Maintainer: None** <br />
@@ -63,7 +63,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -94,7 +95,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -112,7 +114,7 @@
 
 ## Samsung Galaxy Z Fold 3 5G
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Galaxy-Z-Fold3-5G.png" width="480" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Samsung-Galaxy-Z-Fold-3-5G.png" width="500" alt="Preview">
 
 **Codename: q2q** <br />
 **Maintainer: [Azkali](https://github.com/Azkali/)** <br />
@@ -162,7 +164,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -196,7 +199,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -207,7 +211,7 @@
 
 ## Xiaomi Mi 11
 
-<img align="right" src="https://github.com/Daniel224455/Mu-Qcom-Venus-Mi11/blob/main/Pictures/Xiaomi-Mi11.png" width="545" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Mi-11.png" width="500" alt="Preview">
 
 **Codename: venus** <br />
 **Maintainer: [Daniel224455/Daniel6745](https://github.com/Daniel224455/)** <br />
@@ -257,7 +261,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -290,7 +295,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -303,7 +309,7 @@
 
 **WARNING: This Device has no Maintainer!**
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-11T-Pro.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-11T-Pro.png" width="500" alt="Preview">
 
 **Codename: vili** <br />
 **Maintainer: None** <br />
@@ -353,7 +359,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -386,7 +393,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -403,7 +411,7 @@
 
 ## Xiaomi Poco F3
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Poco-F3.png" width="600" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Poco-F3.png" width="500" alt="Preview">
 
 **Codename: alioth** <br />
 **Maintainers: [AdrianoA3](https://github.com/AdrianoA3), [N1kroks](https://github.com/N1kroks)** <br />
@@ -449,7 +457,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -478,7 +487,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -491,7 +501,7 @@
 
 **WARNING: This Device has no Maintainer!** <br />
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Legion-Tab-Y700.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Lenovo-Legion-Tab-Y700.png" width="500" alt="Preview">
 
 **Codename: 9707f** <br />
 **Maintainer: None** <br />
@@ -539,7 +549,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -569,7 +581,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -580,7 +594,7 @@
 
 ## Xiaomi Pad 6
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Pad-6.png" width="500" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Pad-6.png" width="500" alt="Preview">
 
 **Codename: pipa** <br />
 **Maintainer: [6adp](https://github.com/6adp)** <br />
@@ -625,7 +639,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -653,7 +668,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -664,7 +680,7 @@
 
 ## OnePlus 8T
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/OnePlus-8T.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/OnePlus-8T.png" width="500" alt="Preview">
 
 **Codename: kebab** <br />
 **Maintainer: [SwedMlite](https://github.com/SwedMlite)** <br />
@@ -711,7 +727,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -741,7 +758,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -758,7 +776,7 @@
 
 ## OnePlus 7T Pro
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Oneplus-7T-Pro.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Oneplus-7T-Pro.png" width="500" alt="Preview">
 
 **Codename: hotdog** <br />
 **Maintainer: mat-777** <br />
@@ -804,7 +822,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -834,7 +853,8 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -851,7 +871,7 @@
 
 ## Sony Xperia XZ1
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Sony-Xperia-XZ1.png" width="300" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Sony-Xperia-XZ1.png" width="500" alt="Preview">
 
 **Codename: poplar** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
@@ -867,7 +887,7 @@
 |Clocks||✅|
 |UFS|Disabled to prevent Wipe|✅|
 |Buttons||✅|
-|USB|No USB Host & Power|⚠️|
+|USB|Host Mode works once|⚠️|
 |SD Card||✅|
 |ACPI||❌|
 
@@ -898,7 +918,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -928,7 +950,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -947,7 +971,7 @@
 
 **WARNING: This Device has no Maintainer!**
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Redmi-Note-12-Pro-4G.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Redmi-Note-12-Pro-4G.png" width="500" alt="Preview">
 
 **Codename: sweet_k6a** <br />
 **Maintainer: None** <br />
@@ -994,7 +1018,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1024,7 +1050,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1041,7 +1069,7 @@
 
 ## Xiaomi Redmi 10C
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Redmi-10C.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Redmi-10C.png" width="500" alt="Preview">
 
 **Codename: fog** <br />
 **Maintainer: [Statzar](https://github.com/Statzar)** <br />
@@ -1057,7 +1085,7 @@
 |Clocks||✅|
 |UFS||✅|
 |Buttons||✅|
-|USB|No USB Host & Power|⚠️|
+|USB|No USB Power|⚠️|
 |SD Card||✅|
 |ACPI||✅|
 |Slot Switch||✅|
@@ -1088,7 +1116,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1117,7 +1147,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1128,7 +1160,7 @@
 
 ## Xiaomi Redmi Note 11
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Redmi-Note-11.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Redmi-Note-11.png" width="500" alt="Preview">
 
 **Codename: spes** <br />
 **Maintainer: [Statzar](https://github.com/Statzar)** <br />
@@ -1176,7 +1208,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1206,7 +1240,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1223,7 +1259,7 @@
 
 ## Xiaomi Mi A3
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Mi-A3.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Mi-A3.png" width="500" alt="Preview">
 
 **Codename: laurel_sprout** <br />
 **Maintainer: [Kernel357](https://github.com/Kernel357)** <br />
@@ -1270,7 +1306,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1299,7 +1337,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1310,12 +1350,12 @@
 
 ## Xiaomi Redmi Note 8/8T
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Redmi-Note-8.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Redmi-Note-8.png" width="500" alt="Preview">
 
 **Codename: ginkgo** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
 **Contibuters: [SwedMlite](https://github.com/SwedMlite), [Vicente Cortes](https://github.com/vicenteicc2008)** <br />
-**Testers: [SwedMlite](https://github.com/SwedMlite), [Vicente Cortes](https://github.com/vicenteicc2008), [kubawis128](https://github.com/kubawis128)**
+**Testers: [SwedMlite](https://github.com/SwedMlite), [kubawis128](https://github.com/kubawis128)**
 
 ### UEFI Status
 
@@ -1326,7 +1366,7 @@
 |Clocks||✅|
 |eMMC||✅|
 |Buttons||✅|
-|USB|No USB Host|⚠️|
+|USB||✅|
 |SD Card||❌|
 |ACPI||✅|
 
@@ -1355,7 +1395,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1383,7 +1425,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1398,9 +1442,99 @@
 <details>
 <summary><b><strong>Snapdragon 662 Devices</strong></b></summary>
 
+## Motorola Moto G30
+
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Motorola-Moto-G30.png" width="500" alt="Preview">
+
+**Codename: caprip** <br />
+**Maintainer: [Vicente Cortes](https://github.com/vicenteicc2008)** <br />
+**Contibuters: None** <br />
+**Tester: [Vicente Cortes](https://github.com/vicenteicc2008)**
+
+### UEFI Status
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Display||✅|
+|Touchscreen||❌|
+|Clocks||✅|
+|eMMC||✅|
+|Buttons|Pwr Button is Mapped as SUSPEND|⚠️|
+|USB|No USB Host & Power|⚠️|
+|SD Card||❌|
+|ACPI||✅|
+
+### OS Status
+
+<table>
+<tr><th>Windows</th><th>Linux</th></tr>
+<tr><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot||✅|
+|eMMC||✅|
+|SD Card||❌|
+|Buttons||❌|
+|Proximity Sensor||❌|
+|Light Sensor||❌|
+|Accelerometer Sensor||❌|
+|Gyroscope Sensor||❌|
+|Fingerprint Sensor||❌|
+|NFC Sensor||❌|
+|Battery||❌|
+|USB||❌|
+|Charging||❌|
+|WLAN||❌|
+|CPU|4 Cores only|⚠️|
+|Touchscreen||❌|
+|Bluetooth||❌|
+|GPS||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
+|GPU||❌|
+|Camera||❌|
+|Mobile Data||❌|
+|Display||✅|
+|Vibration||❌|
+
+</td><td>
+
+|Feature|Description|State|
+|:------|:----------|:---:|
+|Boot||❌|
+|eMMC||❌|
+|SD Card||❌|
+|Buttons||❌|
+|Proximity Sensor||❌|
+|Light Sensor||❌|
+|Accelerometer Sensor||❌|
+|Gyroscope Sensor||❌|
+|Fingerprint Sensor||❌|
+|NFC Sensor||❌|
+|Battery||❌|
+|USB||❌|
+|Charging||❌|
+|WLAN||❌|
+|CPU||❌|
+|Touchscreen||❌|
+|Bluetooth||❌|
+|GPS||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
+|GPU||❌|
+|Camera||❌|
+|Mobile Data||❌|
+|Display||❌|
+|Vibration||❌|
+
+</td></tr> </table>
+
 ## Xiaomi Redmi 9T
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Redmi-9T.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Redmi-9T.png" width="500" alt="Preview">
 
 **Codename: lime** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
@@ -1447,7 +1581,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1477,7 +1613,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1494,7 +1632,7 @@
 
 ## Xiaomi Mi Max 3
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Mi-Max-3.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Xiaomi-Mi-Max-3.png" width="500" alt="Preview">
 
 **Codename: nitrogen** <br />
 **Maintainer: [AistopGit](https://github.com/AistopGit)** <br />
@@ -1541,7 +1679,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1571,7 +1711,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1588,7 +1730,7 @@
 
 ## Huawei Y6 2018
 
-<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Huawei-Y6-2018.png" width="420" alt="Preview">
+<img align="right" src="https://github.com/Robotix22/Mu-Qcom/blob/main/Pictures/Huawei-Y6-2018.png" width="500" alt="Preview">
 
 **Codename: ATU-L21** <br />
 **Maintainer: [Robotix22](https://github.com/Robotix22/)** <br />
@@ -1632,7 +1774,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
@@ -1659,7 +1803,9 @@
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
-|Audio||❌|
+|Speakers||❌|
+|3.5mm Audio Jack||❌|
+|Microphone||❌|
 |GPU||❌|
 |Camera||❌|
 |Mobile Data||❌|
