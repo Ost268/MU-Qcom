@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build an Android kernel that is actually UEFI disguised as the Kernel
-cat ./BootShim/BootShim.bin "./Build/hotdogPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd" > "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd-bootshim"||exit 1
+cat ./BootShim/BootShim.bin "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd" > "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd-bootshim"||exit 1
 gzip -c < "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd-bootshim" > "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd-bootshim.gz"||exit 1
 cat "./Build/winnerPkg/${_TARGET_BUILD_MODE}_CLANG38/FV/WINNER_UEFI.fd-bootshim.gz" ./ImageResources/DTBs/winner.dtb > ./ImageResources/bootpayload.bin||exit 1
 
@@ -15,5 +15,5 @@ python3 ./ImageResources/mkbootimg.py \
   --os_version 11.0.0 \
   --os_patch_level "$(date '+%Y-%m')" \
   --header_version 1 \
-  -o Mu-hotdog.img \
+  -o Mu-winner.img \
   ||_error "\nFailed to create Android Boot Image!\n"
