@@ -27,7 +27,6 @@
   INF Binaries/winner/QcomPkg/Drivers/FontDxe/FontDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/QcomMpmTimerDxe/QcomMpmTimerDxe.inf
 
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
@@ -71,8 +70,6 @@
   INF Binaries/winner/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
-  INF Binaries/winner/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLA.inf
   INF Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
@@ -90,7 +87,7 @@
   INF Binaries/winner/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/HashDxe/HashDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/CipherDxe/CipherDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/RNGDxe/RngDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/RngDxe/RngDxe.inf
 
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
