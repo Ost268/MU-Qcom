@@ -57,7 +57,7 @@
   gQcomPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Fold"
   gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"winner"
   gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Fold_winner"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Fold
+  gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"winner"
 
   # Simple FrameBuffer
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1536
