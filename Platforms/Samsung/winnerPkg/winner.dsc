@@ -16,7 +16,7 @@
 ################################################################################
 [Defines]
   PLATFORM_NAME                  = winner
-  PLATFORM_GUID                  = 8AF09F13-44C5-96EC-1437-DD899CB5EE5D
+  PLATFORM_GUID                  = 5fd522a5-b671-429f-957f-75113dd02435
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
   OUTPUT_DIRECTORY               = Build/winnerPkg
