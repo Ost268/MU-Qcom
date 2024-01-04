@@ -62,14 +62,11 @@ INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
   INF Binaries/winner/QcomPkg/Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
   
-!if $(USE_DISPLAYDXE) == 1
   INF Binaries/winner/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
-!else
-  INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
-!endif
 
   INF Binaries/winner/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/MpPowerDxe/MpPowerDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
   INF Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/AdcDxe/AdcDxe.inf

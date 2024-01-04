@@ -60,8 +60,8 @@
   gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"winner"
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1536
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2152
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|2152
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1536
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32
 
 [PcdsDynamicDefault.common]
@@ -69,9 +69,5 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2152
   gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1536
   gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|2152
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|365
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|364
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|365
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|364
 
 !include SM8150Pkg/SM8150Pkg.dsc.inc

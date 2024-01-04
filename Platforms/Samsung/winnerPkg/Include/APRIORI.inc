@@ -21,6 +21,7 @@ APRIORI DXE {
   # Core Drivers
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
+  INF ArmPkg/Drivers/ArmPsciMpServicesDxe/ArmPsciMpServicesDxe.inf
 
   FILE DRIVER = F541D663-4A48-40AA-AABF-FF158CCAE34C {
     SECTION DXE_DEPEX = Binaries/winner/QcomPkg/Drivers/SmemDxe/SmemDxe.depex
@@ -54,7 +55,7 @@ APRIORI DXE {
 
   FILE DRIVER = 9A00771F-36D4-4DD5-8916-C48ED9B16B86 {
     SECTION DXE_DEPEX = Binaries/winner/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.depex
-    SECTION PE32 = Binaries/winner/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.efi
+    SECTION PE32 = Binaries/winner/QcomPkg/Drivers//HALIOMMUDxe/HALIOMMUDxe.patched.efi
     SECTION UI = "HALIOMMU"
   }
 
@@ -129,11 +130,13 @@ APRIORI DXE {
     SECTION UI = "PmicDxe"
   }
 
+  INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
   INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
   INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
   INF MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
-
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+  
   FILE DRIVER = F10F76DB-42C1-533F-34A8-69BE24653110 {
     SECTION DXE_DEPEX = Binaries/winner/QcomPkg/Drivers/SdccDxe/SdccDxe.depex
     SECTION PE32 = Binaries/winner/QcomPkg/Drivers/SdccDxe/SdccDxe.efi
@@ -233,7 +236,13 @@ APRIORI DXE {
   }
 
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
-
+  
+  FILE DRIVER = 88ABF42E-EFA7-4D72-A9C8-8B29ACDCF64F {
+    SECTION DXE_DEPEX = Binaries/winner/QcomPkg/Drivers/MpPowerDxe/MpPowerDxe.depex
+    SECTION PE32 = Binaries/winner/QcomPkg/Drivers/MpPowerDxe/MpPowerDxe.efi
+    SECTION UI = "MpPowerDxe"
+  }
+  
   FILE DRIVER = 11faed4c-b21f-4d88-8e48-c4c28a1e50df {
     SECTION DXE_DEPEX = Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.depex
     SECTION PE32 = Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.efi
@@ -331,6 +340,7 @@ APRIORI DXE {
     SECTION UI = "SimpleTextInOutSerial"
   }
 
+  INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
   INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
   INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
   INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
