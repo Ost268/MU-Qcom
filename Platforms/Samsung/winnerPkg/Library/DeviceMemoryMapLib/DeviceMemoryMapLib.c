@@ -30,42 +30,7 @@ gDeviceMemoryDescriptorEx[] = {
   {"MLVM",            0xA8800000, 0x07800000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, WRITE_BACK_XN},
 
   // RAM partition regions
-    /**************************************************
-    *                                                 *
-    *  RamPartitionDXE will add MLVM regions Later.   *
-    *    0xA0000000 to MEMORY_HOLE_START_ADDR         *
-    *                                                 *
-    **************************************************/
-
-    //4GB
-    // Memory hole: 0xBDD00000 - 0xBFFFFFFF
-    // Size: 0x23FFFFF
-
-    //6GB
-    // Memory hole: 0xBCC00000 - 0xBFFFFFFF
-    // Size: 0x33FFFFF
-
-    //8GB
-    // Memory hole: 0xBBB00000 - 0xBFFFFFFF
-    // Size: 0x44FFFFF
-
-    //10GB
-    // Memory hole: 0xBAA00000 - 0xBFFFFFFF
-    // Size: 0x55FFFFF
-
-    //12GB
-    // Memory hole: 0xB9900000 - 0xBFFFFFFF
-    // Size: 0x66FFFFF
-
-    {"RAM Partition",     0x0C0000000, 0x00300000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-    {"DXE Heap",          0x0C0300000, 0x7FD00000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-
-    #if USE_MEMORY_FOR_SERIAL_OUTPUT == 1
-        {"RAM Partition",     0x140000000, 0x3FE00000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-        {"PStore",            0x17FE00000, 0x00200000, AddMem, MEM_RES, SYS_MEM_CAP, Reserv, WRITE_THROUGH_XN},
-    #else
-        {"RAM Partition",     0x140000000, 0x40000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
-    #endif
+  {"RAM Partition",   0xC0000000, 0x1C0000000, AddMem, SYS_MEM, SYS_MEM_CAP, Conv,   WRITE_BACK_XN},
 
   // Other memory regions
   {"AOP_SS_MSG_RAM",  0x0C300000, 0x00100000, NoHob,  MMAP_IO, INITIALIZED, Conv,   NS_DEVICE},
