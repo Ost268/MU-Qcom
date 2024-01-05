@@ -27,8 +27,7 @@
   INF Binaries/winner/QcomPkg/Drivers/FontDxe/FontDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/QcomWDogDxe/QcomWDogDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/QcomBds/QcomBds.inf
-  
+
   INF ArmPkg/Drivers/ArmGic/ArmGicDxe.inf
   INF ArmPkg/Drivers/TimerDxe/TimerDxe.inf
   INF ArmPkg/Drivers/ArmPsciMpServicesDxe/ArmPsciMpServicesDxe.inf
@@ -50,7 +49,11 @@
 
   INF Binaries/winner/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
-INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
+
+  INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
+
+  INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
   INF Binaries/winner/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/HWIODxe/HWIODxe.inf
   INF Binaries/winner/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
@@ -59,22 +62,7 @@ INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
   INF Binaries/winner/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
-  
-  INF Binaries/winner/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
 
-  INF Binaries/winner/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/MpPowerDxe/MpPowerDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
-  INF Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
-  
   INF Binaries/winner/QcomPkg/Application/SamsungQuestApp/SamsungQuestApp.inf
   INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/CcicDxe/CcicDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/ChgDxe/ChgDxe.inf
@@ -84,8 +72,25 @@ INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
   INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/RedriverDxe/RedriverDxe.inf  
   INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/SubPmicDxe/SubPmicDxe.inf 
   INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/SvcLedDxe/SvcLedDxe.inf   
-  INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/VibDxe/VibDxe.inf   
-      
+  INF Binaries/winner/QcomPkg/Drivers/SamsungDxe/VibDxe/VibDxe.inf 
+  
+!if $(USE_DISPLAYDXE) == 1
+  INF Binaries/sweet_k6a/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
+!else
+  INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
+!endif
+
+  INF Binaries/winner/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/PmicDxe/PmicDxeLa.inf
+  INF Binaries/winner/QcomPkg/Drivers/MpPowerDxe/MpPowerDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
+  INF Binaries/winner/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+
   INF MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf
   INF MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe.inf
@@ -97,7 +102,6 @@ INF Binaries/winner/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
   INF Binaries/winner/QcomPkg/Drivers/HashDxe/HashDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/CipherDxe/CipherDxe.inf
   INF Binaries/winner/QcomPkg/Drivers/RngDxe/RngDxe.inf
-  INF Binaries/winner/QcomPkg/Drivers/VariableDxe/VariableDxe.inf
 
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 

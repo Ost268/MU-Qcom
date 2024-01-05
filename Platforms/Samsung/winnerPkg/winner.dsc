@@ -16,7 +16,7 @@
 ################################################################################
 [Defines]
   PLATFORM_NAME                  = winner
-  PLATFORM_GUID                  = 5fd522a5-b671-429f-957f-75113dd02435
+  PLATFORM_GUID                  = 7b23c557-6bf5-4120-b9c7-8f9cb2137a00
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010005
   OUTPUT_DIRECTORY               = Build/winnerPkg
@@ -31,10 +31,10 @@
   # 0 = SM8150
   # 1 = SM8150-AB
   # 2 = SM8150-AC
-  SOC_TYPE                       = 1
+  SOC_TYPE                       = 0
 
 [BuildOptions.common]
-  *_*_*_CC_FLAGS = -DSOC_TYPE=$(SOC_TYPE) -DDISPLAY_USES_RGBA=$(DISPLAY_USES_RGBA)
+  *_*_*_CC_FLAGS = -DSOC_TYPE=$(SOC_TYPE)
 
 [LibraryClasses.common]
   DeviceMemoryMapLib|winnerPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
@@ -69,5 +69,9 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2152
   gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1536
   gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|2152
-
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|215
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|86
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|215
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|86
+  
 !include SM8150Pkg/SM8150Pkg.dsc.inc
