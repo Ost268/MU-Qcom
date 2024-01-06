@@ -65,13 +65,13 @@
   gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32
 
 [PcdsDynamicDefault.common]
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1536
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|2152
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1536
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|2152
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|215
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|86
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|215
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|86
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|2152
+gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1536
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|2152
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|1536
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|269  
+gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|80    
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|269     
+gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|80  
   
 !include SM8150Pkg/SM8150Pkg.dsc.inc
